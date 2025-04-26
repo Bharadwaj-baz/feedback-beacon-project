@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -18,16 +17,15 @@ const Index = () => {
               Our AI-powered platform automatically collects, classifies, and analyzes public feedback to help organizations make data-driven decisions quickly and effectively.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/how-it-works">
-                <Button className="bg-feedback-blue hover:bg-blue-600 text-white px-8 py-6 rounded-md">
-                  Learn How It Works
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button variant="outline" className="border-feedback-blue text-feedback-blue hover:bg-feedback-light px-8 py-6 rounded-md">
-                  Contact Us
-                </Button>
-              </Link>
+              <Button 
+                className="bg-feedback-blue hover:bg-blue-600 text-white px-8 py-6 rounded-md flex items-center gap-2 mx-auto" 
+                onClick={() => {
+                  const chatbotButton = document.querySelector('[aria-label="Open Feedback Chat"]') as HTMLButtonElement;
+                  if (chatbotButton) chatbotButton.click();
+                }}
+              >
+                Start Collecting Feedback <ArrowRight size={16} />
+              </Button>
             </div>
           </div>
         </div>
