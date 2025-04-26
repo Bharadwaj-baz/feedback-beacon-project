@@ -30,7 +30,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <p className="text-gray-600 text-sm mb-2">
-              Email: support@feedbackcollector.edu
+              Email: support@feedbackcollector.lpu
             </p>
             <p className="text-gray-600 text-sm">
               Phone: (123) 456-7890
@@ -40,10 +40,11 @@ export const Footer = () => {
         
         <div className="border-t border-gray-200 mt-8 pt-6 text-center">
           <p className="text-gray-600 text-sm">
-            © {currentYear} Community Feedback Collector. Student Project.
+            © {currentYear} Community Feedback Collector.
           </p>
         </div>
       </div>
     </footer>
   );
 };
+
