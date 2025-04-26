@@ -18,28 +18,6 @@ export const Navbar = () => {
           <span className="text-feedback-green font-bold text-xl">Collector</span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
-          <Link 
-            to="/" 
-            className="text-gray-700 hover:text-feedback-blue transition-colors"
-          >
-            Home
-          </Link>
-          <Link 
-            to="/how-it-works" 
-            className="text-gray-700 hover:text-feedback-blue transition-colors"
-          >
-            How It Works
-          </Link>
-          <Link 
-            to="/contact" 
-            className="text-gray-700 hover:text-feedback-blue transition-colors"
-          >
-            Contact
-          </Link>
-        </div>
-
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-700 focus:outline-none"
@@ -60,20 +38,6 @@ export const Navbar = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Home
-            </Link>
-            <Link 
-              to="/how-it-works" 
-              className="text-gray-700 hover:text-feedback-blue transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              How It Works
-            </Link>
-            <Link 
-              to="/contact" 
-              className="text-gray-700 hover:text-feedback-blue transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
             </Link>
           </div>
         </div>

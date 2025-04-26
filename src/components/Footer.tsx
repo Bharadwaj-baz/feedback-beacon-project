@@ -24,23 +24,13 @@ export const Footer = () => {
                   Home
                 </Link>
               </li>
-              <li>
-                <Link to="/how-it-works" className="text-gray-600 hover:text-feedback-blue text-sm transition-colors">
-                  How It Works
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-600 hover:text-feedback-blue text-sm transition-colors">
-                  Contact Us
-                </Link>
-              </li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <p className="text-gray-600 text-sm mb-2">
-              Email: info@feedbackcollector.edu
+              Email: support@feedbackcollector.edu
             </p>
             <p className="text-gray-600 text-sm">
               Phone: (123) 456-7890
